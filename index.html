@@ -285,26 +285,27 @@
                                 </div>
                             </div>
                             <div class="bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
-                                <form class="flex flex-col gap-4">
+                                <form action="https://formspree.io/f/xeelveen" method="POST"
+                                         class="flex flex-col gap-4">
                                     <div class="grid grid-cols-2 gap-4">
                                         <div class="flex flex-col gap-1">
                                             <label class="text-slate-700 dark:text-gray-300 text-sm font-medium">First Name</label>
-                                            <input class="h-11 w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-3 text-slate-900 dark:text-white outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-background-dark" placeholder="John" type="text"/>
+                                            <input class="h-11 w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-3 text-slate-900 dark:text-white outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-background-dark" placeholder="John" type="text" name="firstname" required autocomplete="off" required/>
                                         </div>
                                         <div class="flex flex-col gap-1">
                                             <label class="text-slate-700 dark:text-gray-300 text-sm font-medium">Last Name</label>
-                                            <input class="h-11 w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-3 text-slate-900 dark:text-white outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-background-dark" placeholder="Doe" type="text"/>
+                                            <input class="h-11 w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-3 text-slate-900 dark:text-white outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-background-dark" placeholder="Doe" type="text" name="lastname" required autocomplete="off" required/>
                                         </div>
                                     </div>
                                     <div class="flex flex-col gap-1">
                                         <label class="text-slate-700 dark:text-gray-300 text-sm font-medium">Email</label>
-                                        <input class="h-11 w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-3 text-slate-900 dark:text-white outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-background-dark" placeholder="john@example.com" type="email"/>
+                                        <input class="h-11 w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-3 text-slate-900 dark:text-white outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-background-dark" placeholder="john@example.com" type="email" name="email" autocomplete="off" required/>
                                     </div>
                                     <div class="flex flex-col gap-1">
                                         <label class="text-slate-700 dark:text-gray-300 text-sm font-medium">Message</label>
-                                        <textarea class="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent p-3 text-slate-900 dark:text-white outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-background-dark" placeholder="Tell me about your project..." rows="4"></textarea>
+                                        <textarea class="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent p-3 text-slate-900 dark:text-white outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-background-dark" placeholder="Tell me about your project..." name="message" autocomplete="off" required rows="4"></textarea>
                                     </div>
-                                    <button class="mt-2 flex h-11 w-full items-center justify-center rounded-lg bg-primary text-sm font-bold text-white hover:bg-blue-600 transition-colors" type="button">
+                                    <button class="mt-2 flex h-11 w-full items-center justify-center rounded-lg bg-primary text-sm font-bold text-white hover:bg-blue-600 transition-colors" type="submit">
                                         Send Message
                                     </button>
                                 </form>
